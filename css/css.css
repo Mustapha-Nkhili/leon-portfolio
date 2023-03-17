@@ -162,6 +162,7 @@ section {
   text-transform: capitalize;
   gap: 34px;
   text-align: center;
+  padding: 40px 5px;
 }
 
 .feature h3 {
@@ -409,7 +410,6 @@ hr {
 }
 
 footer {
-  text-align: center;
   background-color: #2c4755;
   width: 100%;
   color: white;
@@ -417,7 +417,9 @@ footer {
 }
 
 footer .copyright {
+  text-align: center;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 /* this is responsive design for mobile devices */
