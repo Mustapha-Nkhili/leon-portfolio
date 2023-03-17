@@ -409,9 +409,7 @@ hr {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   background-color: #2c4755;
   width: 100%;
   color: white;
