@@ -112,7 +112,7 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/landing.jpg");
+  background-image: url("img/landing.jpg");
   background-position: 0;
   width: 100%;
   height: calc(100vh - 64px);
