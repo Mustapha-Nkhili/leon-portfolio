@@ -144,25 +144,14 @@ nav ul li:hover {
   font-size: 19px;
   line-height: 1.8;
 }
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: #f6f6f6;
-  padding: 50px 0px;
-}
-
 .feature {
   display: grid;
-  grid-template-columns: 330px 330px 330px;
-  grid-template-rows: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   text-transform: capitalize;
-  gap: 34px;
+  gap: 20px;
   text-align: center;
-  padding: 40px 5px;
+  background-color: #f6f6f6;
+  padding: 50px 10px;
 }
 
 .feature h3 {
@@ -240,6 +229,7 @@ section {
   gap: 30px;
   padding: 80px;
   position: relative;
+line-height: 1.6;
 }
 
 .services .services-content i {
@@ -251,28 +241,38 @@ section {
   color: #797979;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 481px) and (max-width: 1200px) {
   .services .image {
     display: none;
   }
 
   .services .services-content {
-    position: flex;
-    padding-left: 50px;
+    padding: 80px 100px;
+    gap: 40px;
   }
-
+  .services .services-content h3 {
+    margin: 22px 0;
+  }
   .services .services-content p,
   .services .services-content h3,
   .services .services-content i {
     display: flex;
     justify-content: center;
   }
-
+}
+@media screen and (max-width: 480px) {
   .services .image {
     display: none;
   }
+  .services .services-content {
+    text-align: center;
+    padding: 80px 20px;
+    gap: 40px;
+  }
+  .services .services-content h3 {
+    margin: 22px 0;
+  }
 }
-
 .portfolio {
   background-color: #f6f6f6;
   padding: 30px 60px;
@@ -373,12 +373,11 @@ hr {
 
 .contact {
   background-color: #f6f6f6;
-  width: 100%;
 }
 
 .contact .contact-content {
   text-align: center;
-  padding: 100px;
+  padding: 100px 10px;
 }
 
 .contact .contact-content h2 {
@@ -387,13 +386,13 @@ hr {
   color: #2c4755;
 }
 
+
 .contact .contact-content a {
   text-decoration: none;
   font-size: 35px;
   color: #10cab7;
   font-weight: 800;
 }
-
 .contact .contact-content .links {
   margin-top: 10px;
 }
@@ -423,13 +422,12 @@ footer .copyright {
 }
 
 /* this is responsive design for mobile devices */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .feature {
-    grid-template-columns: 100%;
-    grid-template-rows: 200px 200px 200px;
-    gap: 117px;
+  grid-template-columns: 1fr;
   }
-
+}
+@media screen and (max-width: 480px) {
   .s-heading {
     font-size: 70px;
   }
@@ -450,15 +448,6 @@ footer .copyright {
 
   .contact .contact-content {
     padding: 50px;
-  }
-}
-
-/* this is responsive design for all devices except large screens */
-@media screen and (min-width: 480px) and (max-width: 1200px) {
-  .feature {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 292px;
-    gap: 0px;
   }
 }
 
@@ -487,8 +476,7 @@ footer .copyright {
 
   hr {
     width: 150px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
   }
 
   .contact .contact-content .social-icons {
