@@ -423,7 +423,7 @@ footer .copyright {
 
 /* this is responsive design for mobile devices */
 @media screen and (max-width: 560px) {
-  .feature {
+  .feature, .projects, .services-content{
   grid-template-columns: 1fr;
   }
 }
