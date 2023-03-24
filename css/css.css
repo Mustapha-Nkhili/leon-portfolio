@@ -280,7 +280,7 @@ line-height: 1.6;
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   justify-content: center;
   padding: 40px;
@@ -288,8 +288,7 @@ line-height: 1.6;
 }
 
 .project {
-  width: auto;
-  height: auto;
+  min-height: 500px;
   box-shadow: 2px 3px 15px #d7dcdf;
   background-color: white;
 }
@@ -423,7 +422,7 @@ footer .copyright {
 
 /* this is responsive design for mobile devices */
 @media screen and (max-width: 560px) {
-  .feature, .projects, .services-content{
+  .feature, .services-content{
   grid-template-columns: 1fr;
   }
 }
@@ -471,7 +470,8 @@ footer .copyright {
   }
 
   .about .about-content .image::after {
-    width: 36.5px;
+    width: 14.5px;
+    margin-left: -40px;
   }
 
   hr {
