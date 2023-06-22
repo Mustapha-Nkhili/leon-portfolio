@@ -6,6 +6,10 @@ Welcome to the portfolio of [Leon Portfolio](https://mustapha-nkhili.github.io/l
 ## Live Demo
 visit: [Leon Portfolio website](https://mustapha-nkhili.github.io/leon-portfolio/)
 
+## Built with
+- HTML5
+- css3
+
 ## Table of Contents
 
 - [About Us](#about-us)
