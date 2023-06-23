@@ -420,6 +420,10 @@ footer .copyright {
   line-height: 1.5;
 }
 
+footer .copyright p:last-child span,
+footer .copyright p:last-child i {
+  color: #10cab7;
+}
 /* this is responsive design for mobile devices */
 @media screen and (max-width: 560px) {
   .feature, .services-content{
